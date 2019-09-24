@@ -1,0 +1,420 @@
+﻿/*
+Theme Name: CC Art Station.Ver2
+Theme URI: Your Theme's URI
+Description: A brief description.
+Version: 1.0
+Author: Chess. OC
+Author URI: Your website address.
+*/
+
+
+@charset "utf-8";
+body,html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+ul, li {
+  list-style:none;
+  margin: 8px;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: rgb(1, 75, 109);
+  color: inherit;
+}
+
+a:hover {
+  color: rgb(4, 71, 32);
+}
+
+.header {
+  height: 80px;
+  background-color: rgb(171, 215, 233) ;
+  position: fixed; 
+  width: 100%;
+  top: 0;
+  z-index: 10;/*Z軸の調整*/
+  text-decoration: none;
+
+}
+
+#heroText {
+  color: rgb(247, 241, 233);/* changes the foreground color to white*/
+  font-weight: bold;
+  font-size: 35px;
+  position: absolute;
+  top: 50%;　　/*ここで位置の調整ができる*/
+  z-index: 2;
+  
+	/*z-index is charge of overlapping of elements*/
+	/*イメージの上に文字を乗せる*/
+  /* width: 80%; */
+  padding: 20px;
+  
+	/*テキストを真ん中に寄せたい。*/
+  
+}
+
+#logo-img {
+  height: 30px;
+  border-radius: 50%;
+}
+
+.logo-text {
+  font-size: 38px;
+  font-weight: bold;
+  color: rgb(4, 71, 32);
+}
+
+#menu {
+  font-weight: bold;
+  /* height: 60px; */
+  float: right;
+  margin-top: -29px;
+  color:rgb(4, 71, 32);
+  
+    
+} 
+
+#menu-mymenu {
+  display: flex;
+/* このプロパティでLIの縦並びが横になる。 */
+  margin: 0 10px;
+    /* 項目の間隔を広げたい場合は、同時に水平方向のマージンを設定します。 */
+}
+
+
+
+
+.title {
+  font-size: 60px;
+  text-align: center;
+  margin: 50px;
+  color:  #01314e;
+}
+
+.button {
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-block; 
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: #c9e0ee;
+  border: solid 1px #01314e;
+  background: #01314e;
+  /* border-radius: 50px;  */
+  transition: .3s;
+  margin: 50px;
+}
+
+.button:hover {
+  background: #b6e8f7;
+  color :#01314e;
+}
+
+.center {
+    text-align: center;
+
+}
+
+/* Hero pageの編集.これでaltいけるか */
+
+#hero {
+  width: 100%;
+  height: 690px;
+  filter: alpha(opacity=70);
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+  margin-bottom: 70px;
+
+}
+
+
+/* stert archieve(blog) */
+.blogNest {
+  /* border: solid 3px #01314e; */
+  width: 80%;
+  margin-left: 8%;
+  margin-bottom: 25px; 
+  display: flex; 
+}
+
+
+.blog-list {
+  border: solid 1px #01314e;
+  width: 75%;
+  font-size: 20px;
+  color:  rgb(247, 241, 233);
+  background-color: #6a8180;
+  height: 160px;
+  margin-left: 10px;
+}
+
+
+.blog-article {
+  width: 100%;
+
+}
+
+.sidebar-origin {
+  background-color: #96cbda;
+  width: 20%;
+  /* float: right; */
+  margin-right: 20px; 
+}
+
+.blog-single {
+  /* display: inline; */
+  width: 80%;
+  padding-right: 60px;
+}
+
+.set {
+  padding-left: 0;
+}
+ 
+.baner-img {
+  width: 100%;
+  height: 10%;
+}
+
+.banar-img2 {
+  width: 350px;
+  height: 350px;
+  float: left;
+  margin: 40px;
+
+} 
+
+*/
+
+.title-blog {
+  font-size: 60px;
+  color:  #01314e;
+  width: 500px;
+} */
+
+
+.deco {
+  border: #01314e 1px solid;
+  border-radius: 5px;
+  font-size: 25px;
+  padding: 5px;
+}
+
+
+/* Start Single page　ほかの場所にもあるかも。。 */
+
+.article-title {
+  font-size: 45px;
+  margin-bottom: 5px;
+}
+
+.article-paragraph {
+  font-size: 30px;
+  width: 80%;
+  
+}
+
+.single-img {
+  width: 300px;
+  height: 300px;
+}
+
+/* Start Works page */
+
+#work {
+  /* border: solid 3px green; */
+  margin: 0px 0px;
+  background-color: rgb(247, 241, 233);
+}
+
+.works {
+    display: flex;
+    text-align: center;
+    
+}
+
+.workOne {
+  /* border: solid 1px #01314e; */
+  text-align: center;
+  width: 33%;
+  margin: 20px;
+
+}
+
+.workImg {
+  width: 100%;
+  height: 100%;
+  margin:0;
+
+}
+
+
+
+
+
+/*Start Contact page */
+
+.center {
+  text-align: center;
+}
+
+.text {
+  font-size: 25px;
+  
+}
+
+.footer {
+  text-align: center;
+  background-color: rgb(2, 38, 53);
+  height: 30px;
+  width: 100%;
+  bottom: 0px;
+  color: rgb(247, 241, 233);
+    /* padding-top: 1px; */
+    /* 最後のは反映されていない。
+    下に付けたい
+    また、文字の高さを真ん中に持ってくるには */
+}
+
+
+/* works page */
+
+.workNest {
+  border: solid 1px green;
+  width: 80%;
+  height: 200px;
+  margin-left: 8%;
+  margin-bottom: 45px;
+  display: flex;
+  background-color: rgb(171, 203, 218);
+}
+
+.work-img {
+  float: left;
+  width: 25%;
+}
+
+.work-list {
+  /* float: right; */
+  /* width: 70%; */
+  font-size: 18px; 
+  /* text-align: left; */
+}
+
+.work-text {
+  margin: 0;
+}
+
+/* for sidebar  */
+
+.sidebar-color {
+  background-color: #fdf9ed;
+}
+
+.inner {
+  margin: 0 80px; 
+  width: 90%;
+  display: flex;
+}
+
+
+/* contact page */
+
+.container {
+  text-align: center;
+  margin-top: 100px;
+  
+}
+
+.form-item {
+  font-size: 25px;
+  margin: 20px;
+}
+
+input {
+  size: 50px;
+}
+
+
+.form {
+  text-align: center;
+  margin: 50px;
+}
+
+.bg1 {
+  background-color: #ecf1f1;
+}
+
+.bg2 {
+  background-color: rgb(247, 241, 233);
+}
+
+#sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  margin-bottom: 0;
+  top: 80px;
+  z-index: 1;
+}
+
+.pan {
+  margin: 40px;
+}
+
+h4 {
+  margin: 5px;
+  padding: 5px;
+}
+
+.margin {
+  margin: 0;
+}
+
+.single-1 {
+  display: flex;
+  margin: 40px;
+}
+
+.pan1 {
+  font-size: 15px;
+  margin: 40px;
+}
+
+
+.widget ul {
+  background-color: #c9e0ee;
+  width: 90%;
+}
+
+.blog-article li {
+  float: left;
+  width: 85%;
+}
+
+.works-single {
+  padding : 0 60px;
+  margin-bottom: 60px;
+}
+
+.wp-pagenavi {
+  width: 50%;
+  margin: 20px 100px;
+
+}
+
+.main-archive {
+  display: flex;
+}
